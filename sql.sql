@@ -4,7 +4,7 @@ CREATE TABLE `orders` (
   `id` mediumint(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
   `product_id` int(11) DEFAULT NULL,
-  `COUNT` int(11) DEFAULT NULL COMMENT '数量',
+  `count` int(11) DEFAULT NULL COMMENT '数量',
   `pay_amount` decimal(10,2) DEFAULT NULL,
   `status` varchar(100) DEFAULT NULL,
   `add_time` datetime DEFAULT CURRENT_TIMESTAMP,

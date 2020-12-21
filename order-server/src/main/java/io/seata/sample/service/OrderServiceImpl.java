@@ -62,8 +62,8 @@ public class OrderServiceImpl implements OrderService{
         result = accountApi.prepare(actionContext, order.getUserId(),order.getPayAmount());
         LOGGER.info("------->扣减账户结束account中" + result);
         LOGGER.info("------->交易结束");
-        throw new RuntimeException("调用2阶段提交的rollback方法");
-        //return true;
+        //throw new RuntimeException("调用2阶段提交的rollback方法");
+        return true;
     }
 
     /**

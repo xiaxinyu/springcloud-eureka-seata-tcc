@@ -1,7 +1,7 @@
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://${eureka.instance.hostname}:8889/eureka/
+            defaultZone: http://${eureka.instance.hostname}:8761/eureka/
     instance:
         hostname: localhost
         prefer-ip-address: true
@@ -23,6 +23,6 @@ spring:
                 tx-service-group: my_test_tx_group
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        password: 123456
-        jdbcUrl: jdbc:mysql://192.168.59.1:3306/seata_storage?useAffectedRows=true&serverTimezone=UTC&characterEncoding=utf-8
+        password: root
+        jdbcUrl: jdbc:mysql://127.0.0.1:3306/seata_storage?useAffectedRows=true&serverTimezone=UTC&characterEncoding=utf-8
         username: root
